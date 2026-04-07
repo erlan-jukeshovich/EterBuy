@@ -1,0 +1,22 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="54" stroke="url(#gradientDark)" stroke-width="3" fill="none"/>
+  <path d="M35 45 Q35 35 45 35 Q55 35 55 45 Q55 55 60 60 Q65 55 65 45 Q65 35 75 35 Q85 35 85 45 L85 75 Q85 85 75 85 L45 85 Q35 85 35 75 Z" fill="url(#gradientDark)" opacity="0.95"/>
+  <path d="M50 50 H70 M50 50 V70 H70 M50 60 H68" stroke="#1e293b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="90" cy="90" r="6" fill="#cbd5e1"/>
+
+  <text x="140" y="75" font-family="Jost, sans-serif" font-size="48" font-weight="bold" fill="url(#textGradientDark)">ETERBUY</text>
+  <circle cx="385" cy="70" r="6" fill="#cbd5e1"/>
+
+  <defs>
+    <linearGradient id="gradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="textGradientDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+  </defs>
+</svg>
