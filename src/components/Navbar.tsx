@@ -57,7 +57,6 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-
         <div className="flex items-center gap-6">
           <button className="group" aria-label="search">
             <img
@@ -67,7 +66,7 @@ const Navbar = () => {
             />
           </button>
 
-          <button
+          <div
             aria-label="Open profile menu"
             className="group relative text-left"
           >
@@ -78,7 +77,7 @@ const Navbar = () => {
             <div className="group-hover:block hidden absolute dropdown-menu right-[-15px] pt-4">
               <div
                 role="menu"
-                className="flex flex-col items-baseline gap-2 w-50  py-3 px-5 bg-slate-100 text-gray-500 rounded"
+                className="flex flex-col items-baseline relative z-50 gap-2 w-50  py-3 px-5 bg-slate-100 text-gray-500 rounded"
               >
                 <button
                   role="menuitem"
@@ -100,7 +99,26 @@ const Navbar = () => {
                 </button>
               </div>
             </div>
-          </button>
+          </div>
+
+          <Link to="/favorite" className="relative group" aria-label="favorite">
+            <svg
+              className="w-7 cursor-pointer group-hover:scale-110 transition-transform"
+              aria-hidden="true"
+              focusable="false"
+              viewBox="0 0 24 24"
+              role="img"
+              width="24px"
+              height="24px"
+              fill="none"
+            >
+              <path
+                stroke="currentColor"
+                strokeWidth="1.5"
+                d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"
+              ></path>
+            </svg>{" "}
+          </Link>
 
           <Link to="/cart" className="relative group">
             <img
@@ -141,6 +159,7 @@ const Navbar = () => {
             </div>
             {NAV_LINKS.map(({ label, to }) => (
               <NavLink
+                key={to}
                 onClick={() => setVisible(false)}
                 className="py-2 pl-6"
                 to={to}
