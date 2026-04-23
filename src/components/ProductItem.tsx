@@ -54,7 +54,7 @@ const ProductItem: FC<ProductItemProps> = ({ product }) => {
                 key={index}
                 type="button"
                 onMouseEnter={() => setCurrentImageIndex(index)}
-                onClick={(e) => e.preventDefault()} // Защита от клика
+                onClick={(e) => e.preventDefault()} 
                 className={`w-10 h-10 rounded-[14px] overflow-hidden border-2 transition-all duration-200 ${
                   index === currentImageIndex
                     ? "border-black scale-110 shadow-md"

@@ -1,7 +1,8 @@
+import Hero from "../components/Hero"
 
 const Favorite = () => {
   return (
-    <div>Favorite</div>
+    <Hero />
   )
 }
 
